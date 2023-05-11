@@ -14,20 +14,20 @@
             android:layout_height="wrap_content">
 
             <TextView
-                android:id="@+id/txtReviewId"
+                android:id="@+id/txtProdukId"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:layout_constraintTop_toTopOf="parent"
-                android:text="FL/18/01/2023/001">
+                android:text="Produk-001">
 
             </TextView>
 
             <TextView
-                android:id="@+id/txtReviewDiterima"
+                android:id="@+id/txtProdukNama"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:layout_constraintTop_toBottomOf="@id/txtReviewId"
-                android:text="Pesanan Diterima: 23 Nov 2022, 15:30">
+                app:layout_constraintTop_toBottomOf="@id/txtProdukId"
+                android:text="Semen Holcym">
 
             </TextView>
 
@@ -35,10 +35,20 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/txtReviewDiterima"
-                android:src="@drawable/ic_review">
+                app:layout_constraintTop_toBottomOf="@id/txtProdukNama"
+                android:src="@drawable/ic_review"
+                android:id="@+id/imgProduk">
 
             </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toRightOf="@id/imgProduk"
+                app:layout_constraintTop_toBottomOf="@id/txtProdukNama"
+                android:text="Rp 150000">
+
+            </TextView>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
